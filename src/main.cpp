@@ -272,7 +272,7 @@ void loop(){
   if (millis() - last_Telemetry_Millis > telemetry_publish_interval) {
     last_Telemetry_Millis = millis();
     Serial.println(F("sending Telemetry data"));
-    String Telemetry = ("la señal de wifi es:"+ getDefaultSensor());
+    String Telemetry = ("señal ESP_NeoPixel:"+ getDefaultSensor());
     publishTelemetry(Telemetry);
   }
 }
